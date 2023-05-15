@@ -1,5 +1,6 @@
 const express = require('express');
 const speech = require('@google-cloud/speech');
+process.env.GOOGLE_APPLICATION_CREDENTIALS = '/path/to/your/keyfile.json'; //after creating an account we will get a keyfile with the api key
 
 const app = express();
 const port = 3000;
